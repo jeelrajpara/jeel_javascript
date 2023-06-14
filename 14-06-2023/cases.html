@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //  {
+    //     var m1=7;
+    //     console.log(m1)
+    //     m1=10;
+    //     console.log(m1)
+    // }
+    //     m1=6;
+    //     console.log(m1) //no error var can be accesed anywhere
+
+
+    //   var num1=10;
+    //     {
+    //         console.log(num1)
+    //         let num1=5;
+    //         console.log(num1)
+    //     } // cannot be initialize before declaration
+
+
+    //  {
+    //     let num1=10;
+    //     console.log(num1)
+    //     num1=5;
+    //     console.log(num1)
+    // }  //no error let can be re initialize
+
+
+    // {
+    //     const num1 = 10;
+    //     console.log(num1)
+    //     num=15;
+    //     console.log(num1)
+    // }   //const value does not change
+
+
+        // {
+        //     console.log(a)
+        //     var a=10;
+        //     console.log(a)
+        // }  // value of a will be undefined and then 10
+
+
+       // {
+      //   var a;
+      //   console.log(a);
+      //   a = 5;
+      // }  //value of a should be initialtized before console
+
+
+        // const a=5;
+        // {
+        //     console.log(a)
+        //     a=7;
+        //     console.log(a)
+        // }  // const value cannot be changed 
+
+
+        // {
+        //     let a=10;  
+        //     console.log(a)
+        // }
+        // {
+        //     let a=16;
+        //     console.log(a)
+        //     a=20;
+        //     console.log(a)
+        // }   //value of a is first 10 then 16 then 20
+
+
+    //   console.log(a)
+    //   let a=10;
+    //   console.log(a)
+    //   console.log(a) // cannot be accessed before declaration
+
+
+    // const a=10;
+    //  {
+    //     console.log(a)
+    //     let a=5;
+    //     console.log(a)
+    //  }  //const cannot be reassigned
+
+    // const a=10;
+    // {
+    //     console.log(a)
+    //     var b=15;
+    //     console.log(b)
+    //     b=a
+    //     console.log(b)
+    // }   // value of b is changed to 10
+
+
+    // console.log(a)
+    // {
+    // const a=10;
+    // console.log(a)
+    // }   // a is not defined
+
+
+    //   let a=15;
+    // console.log(a)
+    // {
+    //     const a=10;
+    //     console.log(a)
+    // }  no error 
+
+
+    //  var a=10;
+    // {
+    //     console.log(a)
+    //     const a=20;
+    // }  a cannto be accessed before initialization
+
+   
+    //  var a=20;
+    // let a=15;
+    // console.log(a) • a can be declared one time at a moment
+
+    
+    //  {
+    //     var a=20;
+    //     console.log(a)
+    //     a=15;
+    //     const a=20
+    //     console.log(a)
+    // }  indentifier a has name already
+
+    
+    //  console.log(a)
+    // {
+    //   const b=20;
+    //   console.log(b)
+    // } a is not defined refrence error
+ 
+
+    //   const a=5;
+    //   {
+    //       console.log(b)
+    //       console.log(a)
+    //   } // refrence error b is not defiened
+
+    // {
+    //     let a=15;
+    //     let a=5;
+    //     console.log(a)
+    // } indetifier repeatation
+
+
+    // {
+    //     var a=5;
+    //     var a=10;
+    //     console.log(a)
+    //     var a=20;
+    //     console.log(a)
+    // }  //value can be reassigned in var
+
+
+    // var name='hello';
+    // console.log(name)
+    // var name='world'
+    // console.log(name)  //no error
+
+    
+    // let name=hello;
+    // console.log(name)  // string can't be recognized without ''
+
+
+    // const name='hello'
+    // console.log(name)
+    // const name='world'
+    // console.log(name)  // syntaxerror:indentifier repeatation
+
+
+    // {
+    // const fname= "hello";
+    // console.log(fname,"world")
+    // }  //hello world is printed
+
+    
+    // fname="jeel";
+    // const fname="jeel";
+    // console.log(fname)  //refrence error fname cannto be accessed before initialiazation
+  
+
+    // let a=10;
+    // console.log(a)
+    // {
+    //     let a=15;
+    //     console.log(a)
+    // }
+    // console.log(a) //let is local variable means value of a is changed for that particular block
+
+
+    // variable with invalid name
+    // var 1name, first.name, middle-name 
+
+
+    //variable with valid name
+    //firstName, planetName, middle_name
+
+
+    //declare a variable with var and perform basic operations like 
+    //redeclaration and reassignment in same and different scope and check output and make all possible cases 
+
+    // var num1=15;
+    // console.log(num1)
+
+    // var num1;
+    // num1=16;
+    // console.log(num1)
+
+    // num1=10;
+    // console.log(num1)
+
+
+    // var num1=2;
+    // {
+    //     console.log(num1)
+    //     num1=5;
+    //     console.log(num1)
+    //     var num1=8;
+    // }
+    // {
+    //     console.log(num1)
+    //     num1=4;
+    // }
+
+
+    // let num1=10;
+    // console.log(num1)
+    
+    // num1=12;
+    // console.log(num1)
+ 
+    // // let num1=5;
+    // // console.log(num1) // syntaxt error(let can't be redeclared)
+
+    // {
+    //     let num1=2;
+    //     console.log(num1)
+    // }
+    // {
+    //     let num1=3;
+    //     console.log(num1)
+    // }  //let can be redclared in different blocks
+
+
+
+    // const num1=10;
+    // console.log(num1)
+    
+    // num1=12;
+    // console.log(num1)  //const value cannot be changed
+ 
+    // // const num1=5;
+    // // console.log(num1) // syntaxt error(let can't be redeclared)
+
+    // {
+    //     const num1=2;
+    //     console.log(num1)
+    // }
+    // {
+    //     const num1=3;
+    //     console.log(num1)
+    // }  //let can be redclared in different blocks
+
+
+    
+</script>
+<body>
+    
+</body>
+</html>
