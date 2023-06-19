@@ -1,11 +1,11 @@
 
 
-// var x=7;
-// function myName(){
-//     console.log("hello wordld");
-// }
-// myName();
-// console.log(x);
+var x=7;
+function myName(){
+    console.log("hello wordld");
+}
+myName();
+console.log(x);
 
 
 // var n=2;
