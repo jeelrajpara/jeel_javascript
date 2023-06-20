@@ -1,3 +1,23 @@
 
 15-06-2023/index.js
 15-06-2023/index.js
+node_modules/.package-lock.json
+node_modules/lodash/_apply.js
+node_modules/lodash/_arrayAggregator.js
+node_modules/lodash/_arrayEach.js
+node_modules/lodash/_arrayEachRight.js
+node_modules/lodash/_arrayEvery.js
+node_modules/lodash/_arrayFilter.js
+node_modules/lodash/_arrayIncludes.js
+node_modules/lodash/_arrayIncludesWith.js
+node_modules/lodash/_arrayMap.js
+node_modules/lodash/_arrayPush.js
+node_modules/lodash/_arrayReduce.js
+node_modules/lodash/_arrayReduceRight.js
+node_modules/lodash/_arraySample.js
+node_modules/lodash/_arrayLikeKeys.js
+node_modules/lodash/_arraySampleSize.js
+node_modules/lodash/_arrayShuffle.js
+node_modules/lodash/_arraySome.js
+node_modules/lodash/_asciiSize.js
+node_modules/lodash/_asciiWords.js

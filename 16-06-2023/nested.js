@@ -88,3 +88,35 @@
 // // console.log(myObj.education);
 // // console.log(myObj.hobbies);
 // console.log(myObj.hobbies.outdoor[3]);
+
+
+
+//call by value  with primitive data type
+// var x=7;
+// var y=x;
+// y=15;
+// x=30;
+// console.log(x);
+// console.log(y);
+
+
+//call by reference with non primitive data type
+
+// const myObj={
+//     name:"jeel",
+//     UID:114,
+// }
+// let myObj2=myObj;
+// myObj2={
+//     name:"hello",
+// }
+// console.log(myObj);
+// console.log(myObj2);
+
+// var arry=[1,2,3,4,5];
+// var arry2=arry;
+// arry2[2]=7887;
+// console.log(arry);
+// console.log(arry2);
+
+
