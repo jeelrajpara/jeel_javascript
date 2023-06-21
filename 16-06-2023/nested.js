@@ -119,4 +119,8 @@
 // console.log(arry);
 // console.log(arry2);
 
-
+console.log(+1);
+console.log(+"");
+console.log(+"hello");
+console.log(+true);
+console.log(+false);
