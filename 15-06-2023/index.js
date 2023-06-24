@@ -1,11 +1,11 @@
 
 
-var x=7;
-function myName(){
-    console.log("hello wordld");
-}
-myName();
-console.log(x);
+// console.log(x);var x=7;
+// function myName(){
+//     console.log("hello wordld");
+// }
+// myName();
+
 
 
 // var n=2;
@@ -30,3 +30,8 @@ console.log(x);
 // 'use strict';
 // x=7;
 // console.log(x);
+const a={b:10};
+const arr=[a];
+console.log(arr[0]);
+a.b=15;
+console.log(arr[0]);

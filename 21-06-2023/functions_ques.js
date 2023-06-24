@@ -45,10 +45,8 @@
 // printArray(myArray);
 
 // 4.Write the syntax for declaring an anonymous JavaScript function and assigning it to a variable called multiply that takes two parameters a and b, and returns their multiplication.
-// const a=5;
-// const b=7;
-// const multiply=()=>console.log(a*b);
-// multiply();
+// const multiply=(a,b)=>a*b;
+// console.log(multiply(5,7));
 
 // 5.What is the syntax for calling a function named myFunction that doesn't take any parameters?
 // function myFunction(){
@@ -62,10 +60,9 @@
 
 // 7.Write the syntax for declaring a JavaScript function called getFullName that takes two parameters firstName and lastName, and returns the full name as a string.
 // function getFullName(firstName,lastName){
-//           const fullName=firstName+lastName;
-//           return fullName;
+//         return firstName+lastName;
 // }
-// console.log("Jeel"+" "+"Rajpara");
+// console.log(getFullName("jeel"," Rajpara"));
 
 // 8.What is the syntax for declaring a JavaScript function called calculateArea that takes two parameters length and width, and returns the area of a rectangle?
 // function calculateArea(length,width){
@@ -329,3 +326,4 @@
 //       }
 // }
 // console.log(exponent());
+
