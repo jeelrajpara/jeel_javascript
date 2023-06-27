@@ -514,6 +514,31 @@
 // }
 // console.log(capitalize("js string exercises"));
 
+// 67.Write a JavaScript function to capitalize the first letter of each word in a string.
+// Test Data :
+// console.log(capitalize_Words('js string exercises'));
+// "Js String Exercises"
+
+// function capitalize(pass_string){
+//     let arr=pass_string.split(" ");
+//     for(let i=0;i<arr.length;i++){
+//         arr[i]=arr[i].charAt(0).toUpperCase()+arr[i].slice(1);
+//     };
+//     console.log(arr.join(" "));
+// }
+// console.log(capitalize("js string exercises"));
+
+// function capitalize_Words(pass_string){
+//     let arr=pass_string.split(" ");
+//     for(index of arr){
+//         index=index.charAt(0).toUpperCase()+index.slice(1);
+//     };
+//     console.log(arr.join(" "));
+// }
+// console.log(capitalize_Words("js string expression"));
+
+
+
 
 
 
