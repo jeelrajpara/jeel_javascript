@@ -59,7 +59,7 @@
 
 // for(i=0;i<=10;i++){
 //     if(i===5){
-//         break;
+//         break;4kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
 //     }
 //     console.log(i);
 // }
@@ -170,10 +170,12 @@
 // console.log(obj4.a); //30
 // console.log(obj5.a); //25 here target takes the property of source
 
-let target={a:10,b:5}
-let source={a:1,b:2}
-let result=Object.assign(target,source)
-// target.a=50;
-console.log(source);
-console.log(target);
-console.log(result);
+// let target={a:10,b:5}
+// let source={a:1,b:2}
+// let result=Object.assign(target,source)
+// // target.a=50;
+// console.log(source);
+// console.log(target);
+// console.log(result);
+
+

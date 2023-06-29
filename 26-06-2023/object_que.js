@@ -219,17 +219,16 @@
 // console.log(obj2);
 
 
-let obj1=[1,2,3,4];
-let obj2={x : { y : 3 , z:{a : 1 } } };
-let obj3=[5 , { q : 7 , r : { s : 10 } },6 , 7 , 8];
-let obj4=Object.assign(obj3,obj1,obj2);
-// console.log(obj4);
-console.log(obj3);
-// console.log(obj2);
-// console.log(obj1);
+// let obj1=[1,2,3,4];
+// let obj2={x : { y : 3 , z:{a : 1 } } };
+// let obj3=Object.assign(obj2,obj1[0]);
+// // console.log(obj4);
+// // console.log(obj3);
+// // console.log(obj2);
+// // console.log(obj1);
 // obj2.x.y=10;
-// console.log(obj4);
-// console.log(obj2);
+// console.log(obj3);
+// console.log(obj2,obj1);
 
 // let obj1={a:[1,2,3,4]}
 // let obj2={a:[5,6,7,8]}
@@ -269,3 +268,79 @@ console.log(obj3);
 // let obj3=Object.assign(obj1,obj2);
 // obj3.a=20;
 // console.log(obj1);
+
+//21 Make a function that works as Object.assign() without using the in-built method. (make only for 2 arguments)
+// function objectAssign(target,source){
+//     for (let key in source) {
+//         if (source.hasOwnProperty(key)) {
+//           target[key] = source[key];
+//         }
+//       }
+//       return target;
+// };
+// let obj1={a:1,b:2};
+// let obj2={c:3,d:10};
+// console.log(objectAssign(obj2,obj1)); //{ c: 3, d: 10, a: 1, b: 2 }
+// console.log(objectAssign(obj1,obj2));//{ a: 1, b: 2, c: 3, d: 10 }
+
+//23.a 
+// let obj1 = { a: 23, b: 45 };
+// let arr1 = [{ ...obj1 }];
+// let arr2 = arr1;
+// arr2[0].c = 5;
+// console.log(arr1)
+// console.log(arr2)
+
+//b.
+// let obj1 = { a: 23, b: 45, c: { f: 990 } };
+// let arr1 = [{ ...obj1 }];
+// let arr2 = arr1;
+// arr2[0].c = 5;
+// obj1.c.f = 30;
+// console.log(arr1); 
+// console.log(obj1);
+
+//c.
+// let obj1 = { a: 23, b: 45, c: { f: 990 } };
+// let arr1 = [{ ...obj1 }];
+// let arr2 = arr1;
+// obj1.c.f = 30;
+// console.log(arr1); 
+// console.log(arr2);
+
+//d.
+// let obj1 = { a: 23, b: 45 };
+// let arr1 = Object.assign([], [{ ...obj1 }]);
+// let arr2 = arr1;
+// arr2[0].c = 5;
+// console.log(arr1); 
+
+//e.
+// let obj1 = { a: 23, b: 45 };
+// let arr1 = [{ ...obj1 }];
+// let arr2 = Object.assign([], arr1);
+// arr2[0].c = 5;
+// console.log(arr1); 
+
+//f.
+// let obj1 = { a: 23, b: 45 };
+// let arr1 = [{ ...obj1 }];
+// let arr2 = Object.assign([], [{...arr1[0]}]);
+// arr2[0].c = 5;
+// console.log(arr1); 
+
+//g.
+// let obj1 = { a: 34, b: 56, c: { h: 77, j: 90 } };
+// let obj2 = Object.assign({}, obj1);
+// let obj3 = Object.assign({ ...obj2 }, { c: { k: 44 } });
+// obj2.c.h = 67;
+// console.log(obj1, obj2, obj3);
+
+// let obj1={a:12,b:16};
+// let obj2={a:100,b:50,c:33,d:{e:12,f:18}};
+// let obj3=[{...obj2,...obj1}];
+// obj2.a=13;
+// obj1.b=17;
+// console.log(obj2);
+// console.log(obj3);
+
