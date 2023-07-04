@@ -424,15 +424,15 @@
 // averagePrice(products);
 
 //13.
-const employees = [
-    { name: "John", salary: 50000, department: "IT" },
-    { name: "Jane", salary: 60000, department: "HR" },
-    { name: "Bob", salary: 55000, department: "IT" },
-    { name: "Sophie", salary: 75000, department: "HR" },
-    { name: "Mike", salary: 65000, department: "IT" },
-    { name: "Emily", salary: 80000, department: "HR" },
-    { name: "David", salary: 70000, department: "IT" },
-];
+// const employees = [
+//     { name: "John", salary: 50000, department: "IT" },
+//     { name: "Jane", salary: 60000, department: "HR" },
+//     { name: "Bob", salary: 55000, department: "IT" },
+//     { name: "Sophie", salary: 75000, department: "HR" },
+//     { name: "Mike", salary: 65000, department: "IT" },
+//     { name: "Emily", salary: 80000, department: "HR" },
+//     { name: "David", salary: 70000, department: "IT" },
+// ];
 //1[i]. count the average salary of each department
 // function averageSalary(employees){
 //     let departmentIt=0;
@@ -579,7 +579,7 @@ const employees = [
 // function myFilter(value,callback){
 //     let array=[];
 //     for(let i=0;i<value.length;i++){
-//         if (callback(value[i], i, value))
+//         if (callback(value[i]))
 //         array.push(value[i]);
 //     }
 //     return array;
@@ -594,7 +594,7 @@ const employees = [
 // function myMap(value,callback){
 //     let array=[];
 //     for(let i=0;i<value.length;i++){
-//         array.push(callback(value[i],i,value));
+//         array.push(callback(value[i]));
 //     }
 //     return array;
 // }
