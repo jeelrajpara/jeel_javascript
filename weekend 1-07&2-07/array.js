@@ -267,9 +267,9 @@
 //         AverageApple += brandApple[i];
 //     };
 //     console.log("Average Of iPhone:", AverageApple / brandApple.length);
-    
+
 //     //..................pixel......................//
-    
+
 //     let brandPixel = products.filter(value => {
 //         if (value.brand === "Google") {
 //             return value.price;
@@ -281,9 +281,9 @@
 //         averagePixel += brandPixel[i];
 //     };
 //     console.log("Average of Pixel", averagePixel / brandPixel.length);
-   
+
 //     //..................Galaxy.....................//
-   
+
 //     let brandSamsung = products.filter(value => {
 //         if (value.brand === "Samsung") {
 //             return value.price;
@@ -294,7 +294,7 @@
 //         averageSamsung += brandSamsung[i];
 //     };
 //     console.log("Average Price for Galaxy:", averageSamsung / brandSamsung.length);
-     
+
 //     //....................OnePlus...................//
 
 //     let brandOnePlus=products.filter(value=>{
@@ -320,7 +320,7 @@
 //         onePlus:[]
 //     };
 //     for(let i=0;i<products.length;i++){
-     
+
 //         if(products[i].brand==="Apple"){
 //             result.apple.push(products[i].price);
 //         }
@@ -373,4 +373,20 @@
 //     return result;
 // }
 // console.log(output(students));
+
+
+//--------------------findLastIndex---------------------//
+// let arr=[1,2,3,5,6]
+// let result=arr.findLastIndex((value=>value>7));
+// console.log(result);
+
+//-------------------------Splice------------------------//
+
+// const months = ['Jan', 'March', 'April', 'June'];
+// let result=months.splice(1,2,"July");  //[ 'Jan', 'July', 'June' ]
+// months.splice(-1,-2,"July"); //[ 'Jan', 'March', 'April', 'July', 'June' ] delete count doesn't work for negative
+// months.splice(-1,1,"July","August"); //[ 'Jan', 'March', 'April', 'July', 'August' ]
+// months.splice(2,-1,"July"); //[ 'Jan', 'March', 'July', 'April', 'June' ]
+// months.splice(4,1,"July");  //[ 'Jan', 'March', 'April', 'June', 'July' ]
+// console.log(months);
 
