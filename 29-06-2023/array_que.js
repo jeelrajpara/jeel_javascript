@@ -149,96 +149,97 @@
 // console.log(result);//[2,4,6,8]
 
 //9.
-// let donut = [
-// 	{
-// 		"id": "0001",
-// 		"type": "donut",
-// 		"name": "Cake",
-// 		"ppu": 0.55,
-// 		"batters":
-// 		{
-// 			"batter":
-// 				[
-// 					{ "id": "1001", "type": "Regular" },
-// 					{ "id": "1002", "type": "Chocolate" },
-// 					{ "id": "1003", "type": "Blueberry" },
-// 					{ "id": "1004", "type": "Devil's Food" }
-// 				]
-// 		},
-// 		"topping":
-// 			[
-// 				{ "id": "5001", "type": "None" },
-// 				{ "id": "5002", "type": "Glazed" },
-// 				{ "id": "5005", "type": "Sugar" },
-// 				{ "id": "5007", "type": "Powdered Sugar" },
-// 				{ "id": "5006", "type": "Chocolate with Sprinkles" },
-// 				{ "id": "5003", "type": "Chocolate" },
-// 				{ "id": "5004", "type": "Maple" }
-// 			]
-// 	},
-// 	{
-// 		"id": "0002",
-// 		"type": "donut2",
-// 		"name": "Raised",
-// 		"ppu": 0.55,
-// 		"batters":
-// 		{
-// 			"batter":
-// 				[
-// 					{ "id": "1001", "type": "Regular" }
-// 				]
-// 		},
-// 		"topping":
-// 			[
-// 				{ "id": "5001", "type": "None" },
-// 				{ "id": "5002", "type": "Glazed" },
-// 				{ "id": "5005", "type": "Sugar" },
-// 				{ "id": "5003", "type": "Chocolate" },
-// 				{ "id": "5004", "type": "Maple" }
-// 			]
-// 	},
-// 	{
-// 		"id": "0003",
-// 		"type": "donut3",
-// 		"name": "Old Fashioned",
-// 		"ppu": 0.55,
-// 		"batters":
-// 		{
-// 			"batter":
-// 				[
-// 					{ "id": "1001", "type": "Regular" },
-// 					{ "id": "1002", "type": "Chocolate" }
-// 				]
-// 		},
-// 		"topping":
-// 			[
-// 				{ "id": "5001", "type": "None" },
-// 				{ "id": "5002", "type": "Glazed" },
-// 				{ "id": "5003", "type": "Chocolate" },
-// 				{ "id": "5004", "type": "Maple" }
-// 			]
-// 	},
-// 	{
-// 		"id": "0004",
-// 		"type": "donut1",
-// 		"name": "Old Fashioned",
-// 		"ppu": 0.55,
-// 		"batters":
-// 		{
-// 			"batter":
-// 				[
-// 					{ "id": "1001", "type": "Regular" }
-// 				]
-// 		},
-// 		"topping":
-// 			[
-// 				{ "id": "5001", "type": "None" },
-// 				{ "id": "5002", "type": "Glazed" },
-// 				{ "id": "5003", "type": "Chocolate" },
-// 				{ "id": "5004", "type": "Maple" }
-// 			]
-// 	}
-// ]
+let donut = [
+	{
+		"id": "0001",
+		"type": "donut",
+		"name": "Cake",
+		"ppu": 0.55,
+		"batters":
+		{
+			"batter":
+				[
+					{ "id": "1001", "type": "Regular" },
+					{ "id": "1002", "type": "Chocolate" },
+					{ "id": "1003", "type": "Blueberry" },
+					{ "id": "1004", "type": "Devil's Food" }
+				]
+		},
+		"topping":
+			[
+				{ "id": "5001", "type": "None" },
+				{ "id": "5002", "type": "Glazed" },
+				{ "id": "5005", "type": "Sugar" },
+				{ "id": "5007", "type": "Powdered Sugar" },
+				{ "id": "5006", "type": "Chocolate with Sprinkles" },
+				{ "id": "5003", "type": "Chocolate" },
+				{ "id": "5004", "type": "Maple" }
+			]
+	},
+	{
+		"id": "0002",
+		"type": "donut2",
+		"name": "Raised",
+		"ppu": 0.55,
+		"batters":
+		{
+			"batter":
+				[
+					{ "id": "1001", "type": "Regular" }
+				]
+		},
+		"topping":
+			[
+				{ "id": "5001", "type": "None" },
+				{ "id": "5002", "type": "Glazed" },
+				{ "id": "5005", "type": "Sugar" },
+				{ "id": "5003", "type": "Chocolate" },
+				{ "id": "5004", "type": "Maple" }
+			]
+	},
+	{
+		"id": "0003",
+		"type": "donut3",
+		"name": "Old Fashioned",
+		"ppu": 0.55,
+		"batters":
+		{
+			"batter":
+				[
+					{ "id": "1001", "type": "Regular" },
+					{ "id": "1002", "type": "Chocolate" }
+				]
+		},
+		"topping":
+			[
+				{ "id": "5001", "type": "None" },
+				{ "id": "5002", "type": "Glazed" },
+				{ "id": "5003", "type": "Chocolate" },
+				{ "id": "5004", "type": "Maple" }
+			]
+	},
+	{
+		"id": "0004",
+		"type": "donut1",
+		"name": "Old Fashioned",
+		"ppu": 0.55,
+		"batters":
+		{
+			"batter":
+				[
+					{ "id": "1001", "type": "Regular" }
+				]
+		},
+		"topping":
+			[
+				{ "id": "5001", "type": "None" },
+				{ "id": "5002", "type": "Glazed" },
+				{ "id": "5003", "type": "Chocolate" },
+				{ "id": "5004", "type": "Maple" }
+			]
+	}
+]
+
 //----------------------------Using nested filter-----------------------//
 //=>1. filter donuts based on which have topping  Chocolate
 // let chocolate=donut.filter((value,index,array)=>{
@@ -250,6 +251,17 @@
 //   value.topping.findIndex((value) => (value.type == "Chocolate")) !== -1);
 // console.log(filterChocolate);
 
+//------------------------------Using reduce----------------------------//
+// function chocolate(donut){
+//     let result=donut.reduce((acc,curr)=>{
+//       curr.topping.includes("Chocolate");
+//        acc.push(curr);
+//        return acc;
+//     },[])
+//     return result;
+// }
+// console.log(chocolate(donut));
+
 //------------------------------Using find------------------------------//
 // function chocolate(donut){
 //     let result=donut.filter((value)=>{
@@ -260,7 +272,7 @@
 // console.log(chocolate(donut));
 
 //=>2. filter donuts based which have batter type is regular and topping have Chocolate
-//-----------------------------------Using nested filter-------------------------------//
+//--------------------------Using nested filter------------------------//
 // let regular=donut.filter(callback);
 // function callback(value){
 // 	let result=value.batters.batter.filter((value)=>{
@@ -270,7 +282,9 @@
 // }
 // console.log(regular);
 
-//----------------------------------Using filter and find-----------------------------//
+
+
+//------------------------Using filter and find------------------------//
 // function regular(donut){
 //     let a=donut.filter((value=>value.batters.batter.find(value=>value.type==="Regular")));
 //     let b=donut.filter((value=>value.topping.find(value=>value.type==="Chocolate")));
@@ -279,7 +293,7 @@
 // console.log(regular(donut));
 
 // =>3. filter donuts based on which have topping chocolate and Sugar
-//----------------------------------Using nested filter------------------------------//
+//------------------------Using nested filter-------------------------//
 // let sugar=donut.filter(sugarCallBack);
 // function sugarCallBack(item){
 //   let sugarTopping=item.topping.filter((value)=>value.type==="Sugar").length>0;
@@ -288,7 +302,7 @@
 // };
 // console.log(sugar);
 
-//----------------------------------Using filter and find---------------------------//
+//------------------------Using filter and find-----------------------//
 // function sugar(donut){
 //     let a=donut.filter((value=>value.topping.find(value=>value.type==="Chocolate")));
 //     let b=donut.filter((value=>value.topping.find(value=>value.type==="Sugar")));
@@ -671,11 +685,170 @@
 // let arr = [1,2,3,4,5];
 // let arr2 = arr.reduce((a, c) => a + c).map(item => item);
 // console.log(arr2); // => in the output we will get error as reduce function return value and map function works on array so it will not get any array hence error
- 
+
 //22.
 // const example = ({ a, b, c }) => {
 //     console.log(a, b, c);  
 // };
-// example(0,1,2); //undefined,undefined,undefined after destructuring it will find for new value and it will not get and any value hence output will be undefined 3 times
+// example(0,1,2); //undefined,undefined,undefined 
 
-    
+//23.Find the Sum of Squares 
+// let arr = [1,2,3,4,5];
+// function squareNum(arr){
+//     let result=arr.reduce((acc,curr)=>{
+//        return acc+(curr**2);
+//     })
+//     return result;
+// }
+// console.log(squareNum(arr)); //55
+
+//24.
+// const students = [
+//     { name: 'Alice', age: 20, grade: 'A' },
+//     { name: 'Bob', age: 18, grade: 'B' },
+//     { name: 'Charlie', age: 19, grade: 'A' },
+//     { name: 'David', age: 20, grade: 'C' },
+// ];
+//24[a]
+//----------------------Sort by age------------------------//
+//----------------------using reduce-----------------------//
+// function groupPeople(objectArray, property) {
+//     return objectArray.reduce(function (accumulator, cuurentValue) {
+//         let key = cuurentValue[property];
+//         accumulator[key] = accumulator[key] || [];
+//         accumulator[key].push(cuurentValue);
+//         return accumulator;
+//     }, {});
+// }
+// let resultAge = groupPeople(students, "age");
+// console.log(resultAge);
+
+//----------------------Using sort------------------------//
+// let sortAge = students.sort((a, b) => a.age - b.age);
+// console.log(sortAge);
+
+//24[b]
+//--------------------Sort by grade----------------------//
+//--------------------Using reduce----------------------//
+// function groupPeople(objectArray, property) {
+//     return objectArray.reduce(function (accumulator, cuurentValue) {
+//         let key = cuurentValue[property];
+//         accumulator[key] = accumulator[key] || [];
+//         accumulator[key].push(cuurentValue);
+//         return accumulator;
+//     }, {});
+// }
+// let resultGrade = groupPeople(students, "grade");
+// console.log(resultGrade);
+
+//----------------------Using sort-----------------------//
+// let sortGrade = students.sort((a,b)=>a.grade - b.grade);
+// console.log(sortGrade);
+
+//24[c]
+//-------------------Sort by name------------------------//
+//-------------------Using reduce-----------------------//
+// function groupPeople(objectArray, property) {
+//     return objectArray.reduce(function (accumulator, cuurentValue) {
+//         let key = cuurentValue[property];
+//         accumulator[key] = accumulator[key] || [];
+//         accumulator[key].push(cuurentValue);
+//         return accumulator;
+//     }, {});
+// }
+// let resultName = groupPeople(students, "name");
+// console.log(resultName);
+
+//--------------------Using sort------------------------//
+// let sortName = students.sort((a,b) => a.name - b.name);
+// console.log(sortName);
+
+//24[d]
+//--------------------Average of ages------------------//
+// function averageAge(students){
+//     return students.reduce((accumulator,currentValue)=>{
+//        return accumulator+currentValue.age/students.length;
+//     },0);
+// }
+// console.log(averageAge(students));
+
+//24[e]
+//-------------------Sum of ages----------------------//
+// function sumAge(students){
+//     return students.reduce((accumulator,currentValue)=>{
+//         return accumulator+currentValue.age;
+//     },0);
+// }
+// console.log(sumAge(students));
+
+//25. flat this array using reduce 
+// const nestedArray = [[1, 2], [3, 4], [5, 6]];
+// function reduceFlate(nestedArray){
+//     return nestedArray.reduce((accumulator,currentValue)=>{
+//         return accumulator.concat(currentValue);
+//     });
+// };
+// console.log(reduceFlate(nestedArray));
+
+//26.Create an array of squares of even numbers from a given array
+// const numbers = [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 ];
+// function squareEvenNum(numbers){
+//     return numbers.reduce((accumulator,currentValue)=>{
+//         if(currentValue % 2 == 0){
+//            accumulator.push(currentValue**2);
+//         }
+//         return accumulator;
+//     },[])
+// }
+// console.log(squareEvenNum(numbers)); //[ 4 , 16, 36 , 64]
+
+//27. Filter out duplicate values from an array.
+// const numbers = [1, 2, 2, 3, 4, 4, 5];
+// function filterOut(numbers){
+//     return numbers.reduce((accumulator,currentValue)=>{
+//         if(!accumulator.includes(currentValue)){
+//             accumulator.push(currentValue);
+//         }
+//         return accumulator;
+//     },[]);
+// }
+// console.log(filterOut(numbers));
+
+//28.Find the first string that contains the letter 'a' in an array.
+// const words = ['apple', 'banana', 'orange'];
+// function letterA(words){
+//     return words.find(value=>value.includes('a'));
+// }
+// console.log(letterA(words));
+
+//29.Find the index of the first odd number in an array.
+// const numbers = [2, 4, 6, 8, 9, 10];
+// function findIndex(numbers){
+//    let result=numbers.findIndex(number=>number%2!==0)
+//    return result;
+// }
+// console.log(findIndex(numbers));
+
+//30.Write a function that returns the factorial of given number
+// function factorial(num) {
+//     if (num == 0 || num == 1) {
+//         return 1;
+//     }
+//     else {
+//         return num * factorial(num - 1);
+//     }
+// }
+// console.log(factorial(6));
+
+//31.Find the index of the first person whose name starts with 'A' and age is less than 20.
+// const people = [
+//     { name: 'Alice', age: 18 },
+//     { name: 'Bob', age: 20 },
+//     { name: 'Charlie', age: 19 },
+//     { name: 'David', age: 21 }
+// ];
+// function ageLessThan(people){
+//     let result=people.findIndex(value=>value.age<20);
+//     return result;
+// }
+// console.log(ageLessThan(people));

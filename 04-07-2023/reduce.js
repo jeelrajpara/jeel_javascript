@@ -65,3 +65,15 @@
 //     },[])
 // } 
 // console.log(fullName());
+
+//
+// let arr1 = [1, 20, 45, 62, 100];
+// let abc = arr1.reduce((total, amount) => {
+//     if (amount > 30) {
+//         total.push(amount);
+//     }
+//     return total;
+// }, []);
+// console.log(abc);  //[ 45, 62,100]
+
+//
