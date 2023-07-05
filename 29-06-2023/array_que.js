@@ -10,7 +10,8 @@
 //     {first_name: "Aleos", last_name: "Lkeu"},
 // ];  
 //--------------------------Using for..of loop---------------------------//
-//1[1]. for(let name of names){
+//1[1].
+//  for(let name of names){
 //     name.full_name=name.first_name + name.last_name;
 // };
 // console.log(names);    
@@ -18,7 +19,7 @@
 //1[2].
 // let result=names.map((name)=>name.full_name=name.first_name + name.last_name);
 // console.log(names);
-//--------------------------Using forEach function---------------------//
+//--------------------------Using forEach function----------------------//
 // names.forEach(name=>{
 //     name.full_name=name.first_name+" "+name.last_name;
 // });
@@ -244,6 +245,10 @@
 //      return value.batters.batter.filter((value)=>value.type="Chocolate").length>0;
 // });
 // console.log(chocolate);
+
+// let filterChocolate = donut.filter((value) =>
+//   value.topping.findIndex((value) => (value.type == "Chocolate")) !== -1);
+// console.log(filterChocolate);
 
 //------------------------------Using find------------------------------//
 // function chocolate(donut){
@@ -619,9 +624,6 @@
 //     for (let i = 0; i < input.length; i++) {
 //         let data = input[i];
 //         let firstLetterOfData = data.name.charAt(0);
-//         // if(!obj[firstLetter]){
-//         //     obj[firstLetter]=[];
-//         // }
 //         obj[firstLetterOfData] = obj[firstLetterOfData] || [];
 //         obj[firstLetterOfData].push(data);
 //     }
@@ -646,8 +648,34 @@
 // groupData(input);
 // console.log(obj);
 
+//19.
+// let arr1 = [{a: 34}, {a: 45}, {a:12}, {a:5}, {a:78}];
+// let arr2 = arr1.map(item => item);
+// arr2[2].b = 45;
+// console.log(arr1);  //[ { a: 34 }, { a: 45 }, { a: 12, b: 45 }, { a: 5 }, { a: 78 } ]
+// console.log(arr2);  //[ { a: 34 }, { a: 45 }, { a: 12, b: 45 }, { a: 5 }, { a: 78 } ]
+//my guess;
+//=> [{a:34},{a:45},{a:12},{a:5},{a:78}]  => [{a:34},{a:45},{a:12,b:45},{a:5},{a:78}]
+//Reason: If we make changes for whole array then it does not change the main array but if we make changes for specific index then it changes the value for both the array.
 
+//20.
+// let arr1 = [{a: 34}, {a: 45}, {a:12}, {a:5}, {a:78}];
+// let arr2 = arr1.map(item => item.a * 2);
+// console.log(arr1);  // => 
+// console.log(arr2);  // =>
+//my guess:
+//=>arr1= [{a:34},{a:45},{a:12},{a:5},{a:78}]
+//=>arr2=[68,90,24,10,156]
 
+//21.
+// let arr = [1,2,3,4,5];
+// let arr2 = arr.reduce((a, c) => a + c).map(item => item);
+// console.log(arr2); // => in the output we will get error as reduce function return value and map function works on array so it will not get any array hence error
+ 
+//22.
+// const example = ({ a, b, c }) => {
+//     console.log(a, b, c);  
+// };
+// example(0,1,2); //undefined,undefined,undefined after destructuring it will find for new value and it will not get and any value hence output will be undefined 3 times
 
-
-
+    
