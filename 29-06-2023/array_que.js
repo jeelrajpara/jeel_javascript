@@ -149,96 +149,96 @@
 // console.log(result);//[2,4,6,8]
 
 //9.
-let donut = [
-	{
-		"id": "0001",
-		"type": "donut",
-		"name": "Cake",
-		"ppu": 0.55,
-		"batters":
-		{
-			"batter":
-				[
-					{ "id": "1001", "type": "Regular" },
-					{ "id": "1002", "type": "Chocolate" },
-					{ "id": "1003", "type": "Blueberry" },
-					{ "id": "1004", "type": "Devil's Food" }
-				]
-		},
-		"topping":
-			[
-				{ "id": "5001", "type": "None" },
-				{ "id": "5002", "type": "Glazed" },
-				{ "id": "5005", "type": "Sugar" },
-				{ "id": "5007", "type": "Powdered Sugar" },
-				{ "id": "5006", "type": "Chocolate with Sprinkles" },
-				{ "id": "5003", "type": "Chocolate" },
-				{ "id": "5004", "type": "Maple" }
-			]
-	},
-	{
-		"id": "0002",
-		"type": "donut2",
-		"name": "Raised",
-		"ppu": 0.55,
-		"batters":
-		{
-			"batter":
-				[
-					{ "id": "1001", "type": "Regular" }
-				]
-		},
-		"topping":
-			[
-				{ "id": "5001", "type": "None" },
-				{ "id": "5002", "type": "Glazed" },
-				{ "id": "5005", "type": "Sugar" },
-				{ "id": "5003", "type": "Chocolate" },
-				{ "id": "5004", "type": "Maple" }
-			]
-	},
-	{
-		"id": "0003",
-		"type": "donut3",
-		"name": "Old Fashioned",
-		"ppu": 0.55,
-		"batters":
-		{
-			"batter":
-				[
-					{ "id": "1001", "type": "Regular" },
-					{ "id": "1002", "type": "Chocolate" }
-				]
-		},
-		"topping":
-			[
-				{ "id": "5001", "type": "None" },
-				{ "id": "5002", "type": "Glazed" },
-				{ "id": "5003", "type": "Chocolate" },
-				{ "id": "5004", "type": "Maple" }
-			]
-	},
-	{
-		"id": "0004",
-		"type": "donut1",
-		"name": "Old Fashioned",
-		"ppu": 0.55,
-		"batters":
-		{
-			"batter":
-				[
-					{ "id": "1001", "type": "Regular" }
-				]
-		},
-		"topping":
-			[
-				{ "id": "5001", "type": "None" },
-				{ "id": "5002", "type": "Glazed" },
-				{ "id": "5003", "type": "Chocolate" },
-				{ "id": "5004", "type": "Maple" }
-			]
-	}
-]
+// let donut = [
+// 	{
+// 		"id": "0001",
+// 		"type": "donut",
+// 		"name": "Cake",
+// 		"ppu": 0.55,
+// 		"batters":
+// 		{
+// 			"batter":
+// 				[
+// 					{ "id": "1001", "type": "Regular" },
+// 					{ "id": "1002", "type": "Chocolate" },
+// 					{ "id": "1003", "type": "Blueberry" },
+// 					{ "id": "1004", "type": "Devil's Food" }
+// 				]
+// 		},
+// 		"topping":
+// 			[
+// 				{ "id": "5001", "type": "None" },
+// 				{ "id": "5002", "type": "Glazed" },
+// 				{ "id": "5005", "type": "Sugar" },
+// 				{ "id": "5007", "type": "Powdered Sugar" },
+// 				{ "id": "5006", "type": "Chocolate with Sprinkles" },
+// 				{ "id": "5003", "type": "Chocolate" },
+// 				{ "id": "5004", "type": "Maple" }
+// 			]
+// 	},
+// 	{
+// 		"id": "0002",
+// 		"type": "donut2",
+// 		"name": "Raised",
+// 		"ppu": 0.55,
+// 		"batters":
+// 		{
+// 			"batter":
+// 				[
+// 					{ "id": "1001", "type": "Regular" }
+// 				]
+// 		},
+// 		"topping":
+// 			[
+// 				{ "id": "5001", "type": "None" },
+// 				{ "id": "5002", "type": "Glazed" },
+// 				{ "id": "5005", "type": "Sugar" },
+// 				{ "id": "5003", "type": "Chocolate" },
+// 				{ "id": "5004", "type": "Maple" }
+// 			]
+// 	},
+// 	{
+// 		"id": "0003",
+// 		"type": "donut3",
+// 		"name": "Old Fashioned",
+// 		"ppu": 0.55,
+// 		"batters":
+// 		{
+// 			"batter":
+// 				[
+// 					{ "id": "1001", "type": "Regular" },
+// 					{ "id": "1002", "type": "Chocolate" }
+// 				]
+// 		},
+// 		"topping":
+// 			[
+// 				{ "id": "5001", "type": "None" },
+// 				{ "id": "5002", "type": "Glazed" },
+// 				{ "id": "5003", "type": "Chocolate" },
+// 				{ "id": "5004", "type": "Maple" }
+// 			]
+// 	},
+// 	{
+// 		"id": "0004",
+// 		"type": "donut1",
+// 		"name": "Old Fashioned",
+// 		"ppu": 0.55,
+// 		"batters":
+// 		{
+// 			"batter":
+// 				[
+// 					{ "id": "1001", "type": "Regular" }
+// 				]
+// 		},
+// 		"topping":
+// 			[
+// 				{ "id": "5001", "type": "None" },
+// 				{ "id": "5002", "type": "Glazed" },
+// 				{ "id": "5003", "type": "Chocolate" },
+// 				{ "id": "5004", "type": "Maple" }
+// 			]
+// 	}
+// ]
 
 //----------------------------Using nested filter-----------------------//
 //=>1. filter donuts based on which have topping  Chocolate
@@ -852,3 +852,242 @@ let donut = [
 //     return result;
 // }
 // console.log(ageLessThan(people));
+
+//32.
+// fun_name([[1, 2], [34, 67], [67, 77], [88, 90]], [1, 2]) => true
+// fun_name([[1, 2], [34, 67], [67, 77], [88, 90]], [2, 1]) => true
+// fun_name([[1, 2], [34, 67], [67, 77], [88, 90]], [22, 15]) => false
+// fun_name([[1, 2], [34, 67], [67, 77], [22, 90, 15], [88, 90]], [22, 15, 90]) => true
+// function checkArrays(arrayOfArray, array) {
+// 	return arrayOfArray.some(subarray => array.every(element => subarray.includes(element)))
+// }
+//   console.log(checkArrays([[1, 2], [34, 67], [67, 77], [88, 90]], [1, 2]));
+//   console.log(checkArrays([[1, 2], [34, 67], [67, 77], [88, 90]], [2, 1]));
+//   console.log(checkArrays([[1, 2], [34, 67], [67, 77], [88, 90]], [22, 15])); 
+//   console.log(checkArrays([[1, 2], [34, 67], [67, 77], [22, 90, 15], [88, 90]], [22, 15, 90])); 
+
+//33.
+// fun_name([[1, 2], [34, 67], [67, 77], [88, 90]], [1, 2]) => true
+// fun_name([[1, 2], [34, 67], [67, 77], [88, 90]], [2, 1]) => false
+// fun_name([[1, 2], [34, 67], [67, 77], [88, 90]], [22, 15]) => false
+// fun_name([[1, 2], [34, 67], [67, 77], [22, 90, 15], [88, 90]], [22, 15, 90]) => false
+
+// function fun_name(arrayOfArray,array){
+// 	let subArray=arrayOfArray.map(value=>{
+// 		let arr=[];
+// 		for(let i=0;i<value.length;i++){
+// 			if(value.at(i)===array.at(i)){
+// 				arr.push(true);
+// 			}else{
+// 				arr.push(false);
+// 			}
+// 		}
+// 		return arr.every(value=>value===true);
+// 	})
+// 	return subArray.some(value=>value===true);
+// }
+// console.log(fun_name([[1, 2], [34, 67], [67, 77], [88, 90]], [1, 2]));
+// console.log(fun_name([[1, 2], [34, 67], [67, 77], [88, 90]], [2, 1]))
+// console.log(fun_name([[1, 2], [34, 67], [67, 77], [88, 90]], [22, 15]));
+// console.log(fun_name([[1, 2], [34, 67], [67, 77], [22, 90, 15], [88, 90]], [22,15,90]));
+
+//34.
+// console.log(union([1, 2, 3], [100, 2, 1, 10]));
+// Output: [1, 2, 3, 10, 100]
+
+// function union(array1,array2) {
+//     let numbers=array1.concat(array2)
+// 	let result=numbers.reduce((accu,cur)=>{
+// 		if(!accu.includes(cur)){
+// 			accu.push(cur);
+// 		}
+// 		return accu;
+// 	},[]).sort((a,b)=>a-b)
+// 	return result;
+// }
+// console.log(union([1,2,3],[100,2,1,10]));
+
+//35.
+// console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+// Output: ["3", "10", "100"]
+// console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]]));
+// Output: ["6"]
+// console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+// Output: ["3", "10", "100"]
+
+// function difference(arr1,arr2){
+// 	arr1=arr1.flat(Infinity);
+// 	arr2=arr2.flat(Infinity);
+// 	let array=[];
+// 	arr1.filter(value=>{
+// 		if(!arr2.includes(value)){
+// 			array.push(String(value));
+// 		}
+// 	});
+// 	arr2.filter(value=>{
+// 		if(!arr1.includes(value)){
+// 			array.push(String(value));
+// 		}
+// 	})
+// 	return array.sort((a,b)=>a-b);
+// }
+// console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]]));
+// console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+
+//36.
+// Write a JavaScript program to find a pair of elements (indices of the two numbers) in a given array whose sum equals a specific target number.
+// (FOR NOW CONSIDER THERE ARE ONLY ONE PAIR WHICH IS POSSIBLE SOLUTION)
+// Input: numbers= [10,20,10,40,50,60,70], target=50
+// Output: [10, 40] || [40,10]
+
+// function number(array, target) {
+// 	for (let i = 0; i < array.length; i++) {
+// 		let result = array.reduce((accu, cur) => {
+// 			if (cur + array[i] === target) {
+// 				accu.push([cur, array[i]]);
+// 			}
+// 			return accu;
+// 		}, [])
+// 		return result;
+// 	}
+// }
+// console.log(number([10, 20, 10, 40, 50, 60, 70], 50))
+
+// function number(array,target){
+// 	let result=[];
+// 	for(i=0;i<array.length;i++){
+// 		for(j=i+1;j<array.length;j++){
+//            if(array[i]+array[j]===target){
+// 			result.push(array[i],array[j])
+// 		   }
+// 		}
+// 	}
+// 	return result;
+// }
+// console.log(number(1,2,3,4,5),9)
+
+// console.log(number([10, 20, 20, 40, 50, 60, 70], 50))
+
+//37.
+// let array= [NaN, 0, 15, false, -22, '',undefined, 47, null]
+// // Expected result : [15, -22, 47]
+// function removeFalsy(array){
+//     return array.filter((value)=>typeof value=='number' && !isNaN(value) && value!==0);
+// }
+// console.log(removeFalsy(array));
+
+//38
+// Write a function that returns the result like examples
+
+// function num_string_range(start,end,skip){
+// 	let arr=[];
+// 	if(typeof start==="string" && typeof end==="string"){
+// 		let startCode=start.charCodeAt(0);
+// 		let endCode=end.charCodeAt(0);
+// 		for(let i=startCode;i<=endCode;i+=skip){
+// 			let str1=String.fromCharCode(i);
+// 			arr.push(i);
+// 		}
+// 	}
+// 	else if(typeof start==="number" &&typeof end==="number" ){
+// 		if(start<end){
+// 			for(let i=start;i<=end;i+=skip){
+// 				arr.push(i);
+// 			}
+// 		}else if(start>end){
+// 			for(let i=start;i>=end;i-=skip){
+// 				arr.push(i);
+// 			}
+// 		}
+// 	}
+// 	return arr;
+// }
+// console.log(num_string_range('a', "z", 2))
+// console.log(num_string_range("Z", "A", 2))
+// console.log(num_string_range(0, -5, 1) )
+
+//39.
+// Write a JavaScript function to remove a specific element from an array.
+// Test data :
+// remove_array_element([2, 5, 9, 6], 5); => [2, 9, 6]
+
+// function myFilter(array,removeElement){
+//     return  array.filter(value=>value!==removeElement);
+// }
+// console.log(myFilter([2,5,9,6],6)); //[2,5,9]
+
+//40.
+// function contains(arr,number){
+// 	return arr.includes(number);
+// }
+// console.log(contains([1,2,3,4],4));
+
+//41.
+// Write a JavaScript program to count the number of arrays inside a given array.
+// Test Data :
+// ([2,8,[6],3,3,5,3,4,[5,4]]) -> 2
+// ([2,8,[6,3,3],[4],5,[3,4,[5,4]]]) -> 3
+// function countArrays(array){
+// 	let count=0;
+// 	for(let i=0;i<array.length;i++){
+// 		if(Array.isArray(array[i])){
+// 			count++;
+// 		}
+// 		count+=countArrays(array[i]);
+// 	}
+// 	return count;
+// }
+// console.log(countArrays([2,8,[6],3,3,5,3,4,[5,4]]))
+// console.log(countArrays([2,8,[6,3,3],[4],5,[3,4,[5,4]]]))
+
+//42.
+// Write a JavaScript program to find the maximum length of arrays inside a given array.
+//.................Using reduce....................//
+// function findMaxLength(array){
+// 	let result=array.reduce((accu,cur)=>{
+//         if(Array.isArray(cur)){
+// 			accu=Math.max(accu,cur.length);
+// 		}
+// 		return accu;
+// 	},0)
+// 	return result;
+// }
+
+//...............Using map........................//
+// function findMaxLength(array){
+// 	let length=0;
+// 	array.map((value)=>{
+// 		if(Array.isArray(value)){
+// 			length=Math.max(length,value.length)
+// 		}
+// 	})
+// 	return length;
+// }
+
+
+// console.log(findMaxLength([2, 8, [6], 3, 3, 5, 3, 4, [5, 4]]));
+// console.log(findMaxLength([2, 8, [6, 3, 3], [4], 5, [3, 4, [5, 4]]]));
+// console.log(findMaxLength([2, 8, [6, 3, 3], [4], 5, [3, 4, [5, 4]], [23, 56]]));
+// console.log(findMaxLength([1, 5, 2, 6, 4, 23, 89]));
+
+//43.
+// Write a JavaScript program to check if an array is a factor chain or not.
+// A factor chain is an array in which the previous element is a factor of the next    consecutive element. The following is a factor chain:
+// [2, 4, 8, 16, 32]
+// 2 is a factor of 4  // 4 is a factor of 8  // 8 is a factor of 16  // 16 is a factor of 32
+// Test Data :
+// ([2, 4, 8, 16, 32]) -> true          ([2, 4, 16, 32, 68]) -> false
+// ([2, 4, 16, 32, 64]) -> true
+// function isFactorChain(arr) {
+// 	return arr.reduce((result, element, index) => {
+// 		if (index > 0) {
+// 			if (element % arr[index - 1] !== 0) {
+// 				result = false;
+// 			}
+// 		}
+// 		return result;
+// 	}, true);
+// }
+// console.log(isFactorChain([2, 4, 8, 16, 32]))
+// console.log(isFactorChain([2, 4, 16, 32, 68]))
+// console.log(isFactorChain([2, 4, 16, 32, 64]))

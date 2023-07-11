@@ -436,7 +436,7 @@
 // console.log(is_Blank('')); // true
 // console.log(is_Blank('abc')); // false
 // function is_Blank(input){
-//     if(input==""){
+//     if(input.trim() == ""){
 //         return true;
 //     }
 //     else return false;
@@ -445,7 +445,7 @@
 // console.log(is_Blank(''));//true
 // console.log(is_Blank('abc')); //false
 // console.log(is_Blank[1,2,3]); //undefined
-// console.log(is_Blank(" "));//false
+// console.log(is_Blank(" "));//true
 // console.log(is_Blank(1,2,3)); //false
 
 // 62.Write a JavaScript function to split a string and convert it into an array of words.
@@ -537,9 +537,22 @@
 // }
 // console.log(capitalize_Words("js string expression"));
 
+//68.
+// function insert(string,insert,position=1){
+//     if(position<=1 || position >string.length){
+//         return string;
+//     }
+//     let result=string.slice(0,position -1);
+//     result +=insert;
+//     result +=string.slice(position -1)
+//     return result;
+// }
+// console.log(insert('We are doing some exercises.'));
+// console.log(insert('We are doing some exercises.','JavaScript '));
+// console.log(insert('We are doing some exercises.','JavaScript',18));
 
-
-
-
-
-
+//69.
+// let text = "Apple, Banana, Kiwi";
+// text.slice(-12, -6);
+// console.log(text);
+//Ans: Apple,Banana,Kiwi there will be no change as sliced result is not stored
