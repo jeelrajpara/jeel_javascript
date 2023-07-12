@@ -137,4 +137,94 @@
 // let date = new Date();
 // console.log(date.getHours());
 // console.log(date.getUTCHours());
-// UTC returns the date and time according to the universal time zone whereas get returns the date and time of local time zone 
+// UTC returns the date and time according to the universal time zone whereas get returns the date and time of local time zone
+
+//..............................................iso date string()...........................................//
+//it returns all the date into its specific date formats which is YYYY-MM-DD : hh:mm:ss its timezone is always UTC time zone with suffix Z
+// let date  = new Date()
+// console.log(date.toISOString());
+
+//..............................................questions.................................................//
+// => Write a JavaScript function to test whether a date is a weekend
+// function isWeekend(date){
+//      let curDate = new Date(date);
+//      if(curDate.getDay()==6 || curDate.getDay()==0 ){
+//         return "It's Weekend";
+//      }
+//      else{
+//         return "It's Working Day";
+//      }
+// }
+// console.log(isWeekend("July 09,2023")); //It's Weekend
+// console.log(isWeekend("2023-07-12")); //It's Working Day
+
+// => Write a JavaScript function to get the difference between two dates in days.
+// function dateDifference(date1, date2) {
+//     let dt1 = new Date(date1);
+//     let dt2 = new Date(date2);
+//     let result = dt2.getTime() - dt1.getTime()
+//     return Math.floor(result / (1000 * 60 * 60 * 24));
+// }
+// console.log(dateDifference('04/02/2014', '11/04/2014')); //216
+// console.log(dateDifference('07/12/2023','07/07/2023')); //-5
+
+// =>  Write a JavaScript function to get the last day of a month.
+// function lastDay(year,month){
+//     return new Date(year,month+1,0).getDate();
+// }
+// console.log(lastDay(2014,0)); //31
+// console.log(lastDay(2023,1)); //28
+
+// => Write a JavaScript function to calculate 'yesterday's day.
+// function getYesterday(date) {
+//     let dt = new Date(date);
+//     dt.setDate(dt.getDate()-1);
+//     return dt.toString();
+// }
+// console.log(getYesterday('07-11-2023'));
+// console.log(getYesterday('Nov 15, 2014'));
+// console.log(getYesterday('Nov 16, 2015'));
+
+// => Write a JavaScript function to get the maximum date from an array of dates.
+// function maxDate(date){
+//     let dt = date.map((dateString)=>new Date(dateString));
+//     return new Date(Math.max(...dt));
+// }
+// console.log(maxDate(['2015/02/01', '2015/02/02', '2015/01/03']))
+
+// => Write a JavaScript function to get the minimum date from an array of dates.
+// function minDate(date){
+//     let dt = date.map((dateString)=> new Date(dateString));
+//     return new Date(Math.min(...dt));
+// }
+// console.log(minDate(['2015/02/01', '2015/02/02', '2015/01/03']))
+
+// => Write a JavaScript function that returns the number of minutes in hours and minutes.
+// function timeConvert(input) {
+//     let num = input;
+//     let h = (num / 60);
+//     let hours = Math.round(h);
+//     let m = (h - hours) * 60;
+//     let minutes = Math.round(m);
+//     return num + " minutes= " + hours + "hour(s) " + minutes + "minutes(s)";
+// }
+// console.log(timeConvert(200))
+
+// => Write a JavaScript function to get the number of days in a year.
+// function daysInYear(year) {
+//     if (year % 4 == 0) {
+//         return 366;
+//     }
+//     else {
+//         return 365;
+//     }
+// }
+// console.log(daysInYear(2024))
+
+// => Write a JavaScript function to get the quarter (1 to 4) of the year.
+// function quarterOfYear(year){
+//     let month = year.getMonth() + 1;
+//     return (Math.floor(month/3))
+// }
+// console.log(quarterOfYear(new Date(2015,1,21))); //0
+// console.log(quarterOfYear(new Date(2015,10,12))); //3
