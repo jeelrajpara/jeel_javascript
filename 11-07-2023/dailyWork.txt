@@ -9,3 +9,6 @@
 4:47  - 5:00  => break
 5:00  - 6:00  => W3resource questions
 6:00  - 7:00  => Lecture for giving marks of Assessment and solving questions and learned and told to research more about Numbers, parseInt , parseFloat,  how to make general date function .   
+
+//12-07-2023
+10:20 -       => Numbers in JavaScript
