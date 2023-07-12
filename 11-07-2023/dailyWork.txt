@@ -1,0 +1,11 @@
+10:15 - 11:15 => Revision
+11:15 - 11:55 => Assessment
+11:55 - 12:06 => coffee
+12:06 - 1:17  => Date 
+1:17  - 1:41  => lunch
+1:41  - 3:00  => Digital clock
+3:00  - 3:30  => Reel making
+3:30  - 3:45  => Youtube video on date and time
+4:47  - 5:00  => break
+5:00  - 6:00  => W3resource questions
+6:00  - 7:00  => Lecture for giving marks of Assessment and solving questions and learned and told to research more about Numbers, parseInt , parseFloat,  how to make general date function .   
