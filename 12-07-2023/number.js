@@ -224,7 +224,99 @@
 // => Write a JavaScript function to get the quarter (1 to 4) of the year.
 // function quarterOfYear(year){
 //     let month = year.getMonth() + 1;
-//     return (Math.floor(month/3))
+//     return (Math.ceil(month/4))
 // }
-// console.log(quarterOfYear(new Date(2015,1,21))); //0
-// console.log(quarterOfYear(new Date(2015,10,12))); //3
+// console.log(quarterOfYear(new Date(2015,1,21))); //1
+// console.log(quarterOfYear(new Date(2015,11,12))); //3
+
+// => Write a JavaScript function to count the number of days passed since the year began.
+// function daysPassed(date) {
+//     let cur = new Date(date.getTime());
+//     let previous = new Date(date.getFullYear(), 0, 1);
+//     return Math.ceil((cur - previous + 1) / (1000 * 60 * 60 * 24));
+//   }
+//   console.log(daysPassed(new Date(2015, 0, 15)));
+//   console.log(daysPassed(new Date()))
+
+// => Write a JavaScript program to calculate age.
+// function getAge(birthDate) {
+//     let today = new Date();
+//     let bday = new Date(birthDate);
+//     let age = today.getFullYear() - bday.getFullYear();
+//     return age;
+// }
+// console.log(getAge(new Date(2004, 2, 18)))
+
+// => Write a JavaScript function to get a textual representation of a day (three letters, Mon through Sun).
+// function getDays(date){
+//     let days=['Sun','Mon','Tue','Wed','Thurs','Fri','Sat'];
+//     let dateIndex = date.getDay();
+//     return days[dateIndex]
+// }
+// console.log(getDays(new Date()));
+// console.log(getDays(new Date(2030-10-5)))
+
+// => Write a JavaScript function to get an ISO-8601 numeric representation of the day of the week (1 (for Monday) to 7 (for Sunday).
+// function numericDate(date){
+//     let days = date.getDay();
+//     if(days==0){
+//         return 7;
+//     }
+//     else{
+//         return days;
+//     }
+// }
+// console.log(numericDate(new Date()))
+// console.log(numericDate(new Date("2023-7-9")))
+
+// => Write a JavaScript function to get a full text representation of a month, such as January or June.
+// function getMonths(month){
+//     let months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+//     let monthIndex = month.getMonth();
+//     return months[monthIndex]
+// }
+// console.log(getMonths(new Date()))
+// console.log(getMonths(new Date("2023-10-15")));
+
+// => Write a JavaScript function to get a two-digit year representation.
+// function sortYear(year) {
+//     let date = new Date(year);
+//     return String(date.getFullYear()).substring(2);
+// }
+// console.log(sortYear("2023"));
+// console.log(sortYear("2024"))
+
+// => Write javascript program to print number of weekend and working day in a month
+// function workingAndWeekDays(year, month) {
+//     let startDate = new Date(year, month - 1, 1);
+//     let endDate = new Date(year, month, 0);
+//     let weekCount = 0;
+//     let weekendCount = 0;
+//     for (let i = startDate; i <= endDate; i.setDate(i.getDate() + 1)) {
+//         let date = i.getDay();
+//         if (date == 0 || date == 6) {
+//             weekendCount++;
+//         }
+//         else {
+//             weekCount++;
+//         }
+//     }
+//     return { workingDay:weekCount, weekend:weekendCount }
+// }
+// console.log(workingAndWeekDays(2023, 9))
+// console.log(workingAndWeekDays(2024,2))
+
+// => Number of working days in a year
+// function WorkingDays(year){
+//     let totalWorkingDays = 0;
+//     let startDate = new Date(year,0,1);
+//     let endDate = new Date(year,11,31);
+//     for(let i = startDate;i<=endDate;i.setDate(i.getDate()+1)){
+//         let date = i.getDay();
+//         if(date!==0 && date!==6){
+//             totalWorkingDays ++;
+//         }
+//     }
+//     return totalWorkingDays;
+// }
+// console.log(WorkingDays(2023))
