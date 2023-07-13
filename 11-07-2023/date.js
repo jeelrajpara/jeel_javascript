@@ -108,3 +108,24 @@
 //7. Write a JavaScript function to test whether a date is a weekend.
 
 
+function getDateFormat(input) {
+    let date = new Date();
+    input = input.toUpperCase();
+    let options={
+        year:'numeric',
+        month:'2-digit',
+        day:'2-digit'
+    };
+    let formattedString = date.toLocaleString('en-US',options);
+    let [month, day, year] = formattedString.split('/');
+    let formattingString = input.replace('YYYY', year).replace('MM', month).replace('DD', day);
+    return formattingString;
+}
+console.log(getDateFormat('YYYY-DD-MM'));
+console.log(getDateFormat('YYYY-MM-DD')); 
+console.log(getDateFormat('YYYY/DD/MM'));  
+console.log(getDateFormat('YYYY/MM/DD'));  
+console.log(getDateFormat('DD-MM-YYYY'));  
+console.log(getDateFormat('MM-DD-YYYY'));  
+console.log(getDateFormat('DD/MM/YYYY'));  
+console.log(getDateFormat('MM/DD/YYYY'));

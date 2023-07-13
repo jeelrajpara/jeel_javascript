@@ -15,13 +15,14 @@
 // console.log(date.toLocaleDateString('en-US',options)) //Thursday, July 13, 2023
 
 // => check whether two dates fall on the same day
-function isSame(yearStr, dayStr) {
-    let year = new Date(yearStr);
-    let day = new Date(dayStr);
-    return (
-        year.getFullYear() === day.getFullYear() &&
-        year.getMonth() === day.getMonth() &&
-        year.getDate() === day.getDate()
-    );
-}
-console.log(isSame("2023,02,18", "2004,02,18"));
+// function isSame(yearStr, dayStr) {
+//     let year = new Date(yearStr);
+//     let day = new Date(dayStr);
+//     return (
+//         year.getFullYear() === day.getFullYear() &&
+//         year.getMonth() === day.getMonth() &&
+//         year.getDate() === day.getDate()
+//     );
+// }
+// console.log(isSame("2023/02/18", "2023/02/18"));
+
