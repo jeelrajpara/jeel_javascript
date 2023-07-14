@@ -47,3 +47,55 @@
 // console.log(getDateFormat('MM-DD-YYYY'));  
 // console.log(getDateFormat('DD/MM/YYYY'));  
 // console.log(getDateFormat('MM/DD/YYYY'));
+
+//...........................................DOM......................................//
+
+    //getElementById()
+    // let id = document.getElementById('id1')
+    // console.log(id)
+
+    // getElementsByClassName()
+    // let className = document.getElementsByClassName('day')
+    // console.log(className)
+
+    //getElementsByTagName()
+    // let tagName = document.getElementsByTagName('li')
+    // console.log(tagName)
+
+    //getElementsByName()
+    // let names = document.getElementsByName('animal')
+    // console.log(names)
+
+    // let querySelector = document.querySelector('p')
+    // console.log(querySelector)
+
+    // let querySelectorAll = document.querySelectorAll('div,.list-items')
+    // console.log(querySelectorAll)
+
+    // let parent = document.querySelector('.parent');
+    // console.log(parent)
+    // console.log(parent.children[0].innerHTML)
+    // for(let i=0;i<parent.children.length;i++){
+    //     console.log(parent.children[i].innerHTML);
+    // }
+    // parent.children[1].style.color = "orange";
+    // console.log(parent.firstElementChild.innerHTML)
+    // console.log(parent.lastElementChild.innerHTML)
+
+    // const day1= document.querySelector('.day')
+    // console.log(day1)
+    // console.log(day1.parentElement)
+    // console.log(day1.nextElementSibling)
+    // console.log('Nodes: ',parent.childNodes)
+    
+    //creating new element
+    // let newElement = document.createElement('h1')
+    // console.log(newElement)
+    // newElement.className = 'main'
+    // newElement.id = Math.round(Math.random()*10+1)
+    // newElement.setAttribute('title','DOM Manipulation')
+    // newElement.style.backgroundColor ='green';
+    // // newElement.innerText = "Adding an element"
+    // let add =document.createTextNode("Adding an element")
+    // newElement.appendChild(add)
+    // document.body.appendChild(newElement)
