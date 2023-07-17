@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #000;
+}
+.navbar li a:focus{
+    color: teal;
+    background-color: pink;
+}
+.side-nav li a{
+    text-decoration: none;
+    color: #000;
+}
+.side-nav li a:focus{
+    color: blue;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.container-2{
+    padding: 10px;
+    margin-top: 10px;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
