@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">Hello, World!</h1>
+    <button onclick="changeText()">Change Text</button>
+    <p class="paragraph">This is the first paragraph.</p>
+    <p class="paragraph">This is the second paragraph.</p>
+    <p class="paragraph">This is the third paragraph.</p>
+    <script>
+        //event handlers
+        function changeText() {
+            document.getElementById("heading").textContent = "New Text!";
+        }
+        //event listner
+        let text = document.getElementById('heading');
+        text.addEventListener('click', () => {
+            console.log('hello')
+        })
+        const paragraphs = document.getElementsByClassName('paragraph');
+
+        for (const para of paragraphs) {
+            para.addEventListener('mouseover', () => {
+                para.textContent = "new para";
+            });
+        }
+    </script>
+</body>
+
+</html>
