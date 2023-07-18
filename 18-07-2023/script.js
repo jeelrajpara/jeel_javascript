@@ -269,3 +269,190 @@
 //     return max=((num1 > num2) ? ((num1 > num3) ? num1 : num3) : ((num2 > num3) ? num2 : num3));
 // }
 // console.log(maximumNum());
+
+// function caluculatePrice(price,discount=10){
+//     return price-((price*discount)/100);
+// }
+// console.log(caluculatePrice(100))
+
+//Arrow function
+// squareNum=(num)=>num**2;
+// console.log(squareNum(5))
+
+//----------------------------------------------String--------------------------------------------//
+
+// Write a JavaScript function to check whether an 'input' is a string or not.
+// function isString(input){
+//     if(typeof input === "string"){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+// console.log(isString('W3resource'))
+
+// Write a JavaScript function to check whether a string is blank or not.
+
+// function isBlank(input){
+//     if(input.trim()===""){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+// console.log(isBlank("")) //true
+// console.log(isBlank(" ")) //true
+// console.log(isBlank('hello')) //false
+
+// Write a JavaScript function to split a string and convert it into an array of words.
+// function stringToArray(input){
+//     return input.split(" ")
+// }
+// console.log(stringToArray("Robin Singh"))
+
+// Write a JavaScript function to extract a specified number of characters from a string.
+// function extractCharacters(input,characters){
+//      if(typeof input !=='string' || characters<=0){
+//         return '';
+//      }
+//      return input.slice(0,characters);
+// }
+// console.log(extractCharacters("Hello World",5))
+// console.log(extractCharacters("Robin singh",4))
+
+// Write a JavaScript function that hides email addresses to prevent unauthorized access.
+// function protectEmail(input){
+//     return input.replace(input.slice(5,input.indexOf('@')),"...");
+// }
+// console.log(protectEmail("robin_singh@example.com")); 
+
+// Write a JavaScript function to parameterize a string.
+// function parameterize(input){
+//     return input.toLowerCase().split(" ").join("-")
+// }
+// console.log(parameterize('Robin Singh from USA'))
+
+// Write a JavaScript function to capitalize the first letter of each word in a string.
+
+// function capitalize(input) {
+//     let words = input.split(" ");
+//     for (let i = 0; i < words.length; i++) {
+//         words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+//     }
+//     return words.join(" ");
+// }
+// console.log(capitalize('js string exercises'));
+
+//  Write a JavaScript function to capitalize the first letter of a string.
+// function capitalize(input){
+//     return input.charAt(0).toUpperCase() + input.slice(1)
+// }
+// console.log(capitalize('js string exercises'))
+
+// Write a JavaScript function to insert a string within a string at a particular position 
+// function insert(str, insert, position = 1) {
+//     if (position < 1 || position > str.length) {
+//         return "";
+//     }
+//     let result = str.slice(0, position - 1);
+//     result += insert;
+//     result += str.slice(position - 1)
+//     return result;
+// }
+// console.log(insert('We are doing some exercises.'));
+// console.log(insert('We are doing some exercises.', 'JavaScript '));
+// console.log(insert('We are doing some exercises.', 'JavaScript', 18));
+
+// const a = 'hello';
+// const b = new String('hello');
+// console.log(typeof a) //string
+// console.log(typeof b) //object ... Why?
+
+// var str = "Twice a day";
+// var index = str.indexOf("a");
+// var index2 = str.lastIndexOf("a");
+// console.log(index+1)
+// console.log(index2)
+// console.log(str.indexOf("a", index + 1) === index2);  // Doubt 
+
+// console.log(typeof null) // object
+
+// var num = -1234.56;
+// console.log(num.toPrecision(5));
+
+// let num = 0.5;
+// console.log(num.toFixed(2))
+// console.log(num.toPrecision(2))
+
+// let num = 100.1806;
+// console.log(num.toFixed(3))
+// console.log(num.toPrecision(2))
+
+// let num = -3.14
+// console.log(num.toFixed(3))
+
+// let num = 106;
+// console.log(num.toExponential(1))
+
+// console.log( parseInt(100 .toString(2), 2) );
+
+//  How do you perform a case-insensitive search in a string in JavaScript?
+// function caseSensitiveSearch(search, target) {
+//     let searchStringUpper = search.toUpperCase();
+//     let targetStringUpper = target.toUpperCase();
+//     let result = targetStringUpper.indexOf(searchStringUpper)
+//     return result !==-1;
+// }
+// console.log(caseSensitiveSearch('hello', 'Hello')) //true
+// console.log(caseSensitiveSearch('hello','World'))  //false
+
+//  How do you extract unique characters from a string in JavaScript?
+// function getUniqueCharacter(str) {
+//     let uniqueString = '';
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i]
+//         if (uniqueString.indexOf(char) === -1) {
+//             uniqueString += char
+//         }
+//     }
+//     return uniqueString;
+// }
+// console.log(getUniqueCharacter('Hello World')) //Helo Wrd
+
+// How do you count the number of words in a string in JavaScript?
+// function countWords(str){
+//     return str.split(' ').join('').length;
+// }
+// console.log(countWords('Hello World'))
+
+// let num = 123;
+// console.log(num.toPrecision(2))
+
+// let num = 10;
+// console.log(num.toPrecision(2))
+// console.log(num.toFixed(1))
+// console.log(typeof -3.14.toFixed(3))
+// console.log( parseInt(100 .toString(2), 2) );
+// console.log(0.56.toPrecision(1));
+
+// var a = NaN;
+// console.log(a === NaN);
+
+// console.log(Number(null)) //0
+
+// console.log(Number(1.44).toFixed(4)) //1.4400
+// console.log(Number(1.44).toPrecision(4)) //1.440
+
+// console.log(Number.isFinite('0')) //false
+// console.log(isFinite('0')) //true
+
+// let a = 'The quick brown fox jumps over the lazy dog.'
+// console.log( typeof a.charCodeAt(2))
+// a.endsWith('g')
+// console.log(a)
+
+// let num = 77.12343
+// console.log(num.toExponential(0)) //string //8e+1
+// console.log(num.toExponential(1)) //string //7.7e+1
