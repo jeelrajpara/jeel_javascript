@@ -555,3 +555,36 @@
 // console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]]));
 // console.log(difference([1, 2, 3], [100, 2, 1, 10]));
 
+// remove duplicate value from string
+// let arr = ["apple","banana","orange","Apple","lichie","strabbery"];
+// function filterDuplicate(arr){
+//     let array = [];
+//     for(let i =0;i<arr.length;i++){
+//         if(!array.includes(arr[i].toLowerCase())){
+//             array.push(arr[i])
+//         }
+//     }
+//     return array;
+// }
+// console.log(filterDuplicate(arr));
+
+//remove duplicate value from array of objects
+let arr = [
+    { id: 1, name: 'fvsdv' },
+    { id: 2, name: 'fcws' },
+    { id: 3, name: 'dvdf' },
+    { id: 4, name: 'fvfved' },
+    { id: 1, name: 'fwcsd' },
+    { id: 1, name: 'fws' },
+    { id: 2, name: 'cvds' },
+]
+function filterObject(arr) {
+    let array = [];
+    arr.forEach((value) => {
+        if (!array.find((element) => element.id === value.id)) {
+            array.push(value);
+        }
+    })
+    return array;
+}
+console.log(filterObject(arr))
