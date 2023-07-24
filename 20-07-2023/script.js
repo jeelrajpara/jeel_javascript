@@ -58,6 +58,11 @@
 // result.firstChild.textContent = "I am learning javascript DOM"
 
 // parenode and parent element 
-let result = document.getElementById('my');
-console.log(result.parentNode)
-console.log(result.parentElement)
+// let result = document.getElementById('my');
+// console.log(result.parentNode)
+// console.log(result.parentElement)
+
+// let demoi = document.getElementById("denmo");
+// console.log(demoi.innerHTML)
+// console.log(demoi.textContent)
+// console.log(demoi.innerText = "<h1>sdfsd</h1>")

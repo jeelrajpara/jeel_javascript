@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        border: 1px solid black;
+        width: 15%;
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <form>
+        <label for="password">Input</label>
+        <input type="text" id="password"> <br> <br>
+        <p onclick="generatePassword()">Generate password</p>
+    </form>
+    <script>
+        let pass = document.getElementById('password');
+        let len = 12;
+        let upperCase = 'ABCDEFGHIJKLMNOPQRSTUVXWYZ';
+        let lowerCase = 'abcdefghijklmnopqrstuvxwyz';
+        let numbers = '0123456789';
+        let symbol = '@#$%^&*()_-+=|~[]{}></';
+
+        let allChars = upperCase + lowerCase + numbers + symbol;
+
+        function generatePassword() {
+            let password = '';
+            password += upperCase[Math.floor(Math.random() * upperCase.length)];
+            password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+            password += numbers[Math.floor(Math.random() * numbers.length)];
+            password += symbol[Math.floor(Math.random() * symbol.length)]
+            while (len > password.length) {
+                password += allChars[Math.floor(Math.random() * allChars.length)]
+            }
+            pass.value = password;
+            pass.textContent = password;
+        }
+    </script>
+</body>
+
+</html>
