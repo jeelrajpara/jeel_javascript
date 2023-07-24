@@ -1,91 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic table</title>
+    <title>Toast Notification</title>
 </head>
 <style>
-    * {
+    *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-
-    table {
-        margin-top: 5px;
-        border-collapse: collapse;
-        width: 100%;
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    th,td{
-        border: 1px solid black;
-        padding: 5px;
-        text-align: center;
+    #btn{
+        border: none;
+        background-color: cadetblue;
+        color: #fff;
+        padding: 20px;
+        font-size: 30px;
+    }
+    #text-container{
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        color: #fff;
     }
 </style>
-
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Serial Number</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Phone Number</th>
-            </tr>
-        </thead>
-        <tbody id="table-body"></tbody>
-    </table>
-    <div class="target"></div>
+    <div class="container">
+        <button id="btn">Show Notification</button>
+        <div id="text-container"></div>
+    </div>
     <script>
-        let userData = [
-            {
-                id: 432,
-                first_name: "Asd",
-                last_name: "paerl",
-                email: "abc@gmail.com",
-                phone: "+919394099203"
-            },
-            {
-                id: 342,
-                first_name: "dsf",
-                last_name: "paerl",
-                email: "sdf@gmail.com",
-                phone: "+919394099089"
-            },
-            {
-                id: 765,
-                first_name: "dfgf",
-                last_name: "dfg",
-                email: "muyjgh@gmail.com",
-                phone: "+919394054345"
-            },
-            {
-                id: 123,
-                first_name: "sdxfg",
-                last_name: "gdfd",
-                email: "werrew@gmail.com",
-                phone: "+915464569203"
-            },
-        ]
-        let tableBody = document.getElementById('table-body');
-        function dynamicTable() {
-            let rows = '';
-            userData.forEach((user, index) => {
-                rows += `
-                <tr>
-                    <td>${index + 1}</td>
-                    <td>${user.first_name}</td>
-                    <td>${user.last_name}</td>
-                    <td><a href="mailto:${user.email}">${user.email}</a></td>
-                    <td>${user.phone}</td>
-                <tr>`;
-            });
-            return rows;
+        function getRandomMessage(){
+            let message =['Hi there','Have a nice day!','Thanks!'];
+            let randomText = Math.floor(Math.random()*message.length);
+            return message[randomText]
         }
-        tableBody.innerHTML = dynamicTable();
+        function showMess(msg){
+            let textContainer = document.getElementById('text-container');
+            let create = document.createElement('div');
+            create.classList.add('toast');
+            create.textContent = msg;
+            textContainer.appendChild(create);
+
+            setTimeout(()=>{
+                create.remove();
+            },5000);
+        }
+        let taostBtn = document.getElementById('btn');
+        taostBtn.addEventListener('click',()=>{
+            let random = getRandomMessage();
+            showMess(random);
+        })
     </script>
 </body>
 </html>

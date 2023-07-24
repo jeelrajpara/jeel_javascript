@@ -1,82 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Ripple Animation</title>
+    <title>Ripple Button Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #020303;
+        }
+
+        .ripple-btn {
+            position: relative;
+            overflow: hidden;
+            padding: 14px 40px;
+            font-size: 20px;
+            border: none;
+            background: linear-gradient(90deg, #6616d0, #ac34e7);
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .fixed-ripple {
+            width: 100px;
+            height: 100px;
+        }
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.7);
+            transform: scale(0);
+            animation: ripple-animation 0.5s;
+        }
+
+        @keyframes ripple-animation {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #350048;
-    }
-
-    #btn {
-        position: relative;
-        display: inline-block;
-        color: #fff;
-        padding: 14px 40px;
-        background: linear-gradient(90deg, #6616d0, #ac34e7);
-        border-radius: 20px;
-        overflow: hidden;
-        border: none;
-    }
-
-    #btn .overlay {
-        position: absolute;
-        background-color: #fff;
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-        top: 0;
-        left: 0;
-        animation: blink 0.5s linear infinite;
-    }
-
-    @keyframes blink {
-        0% {
-            height: 0px;
-            opacity: 0.5;
-            width: 0px;
-        }
-
-        100% {
-            height: 200px;
-            width: 200px;
-            opacity: 0;
-        }
-    }
-</style>
 
 <body>
-    <button id="btn" href="#">Hover Me</button>
-    <span class="overlay"></span>
+    <button class="ripple-btn" onclick="addRipple(event)">Click Here</button>
 
     <script>
-        let btn = document.getElementById('btn');
-        btn.addEventListener('click', (e) => {
-            let overlay = document.createElement('span');
-            overlay.classList.add('overlay')
-            let x = e.clientX - e.target.offsetLeft;
-            let y = e.clientY - e.target.offsetTop;
+        function addRipple(event) {
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple', 'fixed-ripple'); 
+            const button = event.currentTarget;
+            ripple.style.left = `${event.clientX - button.offsetLeft - 50}px`;
+            ripple.style.top = `${event.clientY - button.offsetTop - 50}px`; 
+            button.appendChild(ripple);
 
-            overlay.style.left = `${x}px`;
-            overlay.style.top = `${y}px`;
+            ripple.addEventListener('animationend', () => {
+                ripple.remove();
+            });
+        }
 
-            setTimeout(()=>{
-                overlay.remove();
-            },5000)
-        })
+
     </script>
 </body>
 

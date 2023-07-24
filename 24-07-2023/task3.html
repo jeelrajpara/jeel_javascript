@@ -1,66 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toast Notification</title>
+    <title>Dynamic Table</title>
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    .container{
-        height: 100vh;
-        width: 100vw;
-        background-color: black;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    table {
+        margin-top: 5px;
+        border-collapse: collapse;
+        width: 100%;
     }
-    #btn{
-        border: none;
-        background-color: cadetblue;
-        color: #fff;
-        padding: 20px;
-        font-size: 30px;
-    }
-    #text-container{
-        position: absolute;
-        bottom: 5px;
-        right: 10px;
-        color: #fff;
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
     }
 </style>
-<body>
-    <div class="container">
-        <button id="btn">Show Notification</button>
-        <div id="text-container"></div>
-    </div>
-    <script>
-        function getRandomMessage(){
-            let message =['Hi there','Have a nice day!','Thanks!'];
-            let randomText = Math.floor(Math.random()*message.length);
-            return message[randomText]
-        }
-        function showMess(msg){
-            let textContainer = document.getElementById('text-container');
-            let create = document.createElement('div');
-            create.classList.add('toast');
-            create.textContent = msg;
-            textContainer.appendChild(create);
 
-            setTimeout(()=>{
-                create.remove();
-            },5000);
+<body>
+    <div id="tableContainer"></div>
+
+    <script>
+        const usersData = [
+            {
+                id: 432,
+                first_name: "Asd",
+                last_name: "paerl",
+                email: "mailto:abc@gmail.com",
+                phone: "+919394099203"
+            },
+            {
+                id: 342,
+                first_name: "dsf",
+                last_name: "paerl",
+                email: "mailto:sdf@gmail.com",
+                phone: "+919394099089"
+            },
+            {
+                id: 765,
+                first_name: "dfgf",
+                last_name: "dfg",
+                email: "mailto:muyjgh@gmail.com",
+                phone: "+919394054345"
+            },
+            {
+                first_name: "sdxfg",
+                last_name: "gdfd",
+                id: 123,
+                email: "mailto:werrew@gmail.com",
+                phone: "+915464569203",
+            },
+        ];
+
+        function getAllKeys(data){
+            let keys = new Set();
+            data.forEach(item=>{
+                Object.keys(item).forEach(key=>{
+                    keys.add(key);
+                })
+            })
+            return Array.from(keys);
         }
-        let taostBtn = document.getElementById('btn');
-        taostBtn.addEventListener('click',()=>{
-            let random = getRandomMessage();
-            showMess(random);
+        function createDynamicTable(headers, data) {
+            let tableContainer = document.getElementById('tableContainer');
+            let table = document.createElement('table');
+            let thead = document.createElement('thead');
+            let tbody = document.createElement('tbody');
+
+            let headerRow = document.createElement('tr');
+            headers.forEach(header => {
+                let th = document.createElement('th');
+                th.textContent = header;
+                headerRow.appendChild(th);
+            })
+            thead.appendChild(headerRow);
+            data.forEach(item => {
+                let row = document.createElement('tr');
+                headers.forEach(header => {
+                    let td = document.createElement('td');
+                    td.textContent = item[header] || "";
+                    row.appendChild(td);
+                })
+                tbody.appendChild(row);
+            })
+           let allKeys = getAllKeys(data);
+           let newKeys = allKeys.filter(key=>!headers.includes(key));
+           newKeys.forEach(newKey=>{
+            let th = document.createElement('th');
+            th.textContent = newKey;
+            headerRow.appendChild(th);
+
+            data.forEach(item=>{
+                let td = document.createElement('td');
+                td.textContent = item[newKey] || "";
+                tbody.querySelector(`tr:nth-child(${data.indexOf(item) + 1})`).appendChild(td);
+            })
         })
+        table.appendChild(thead);
+        table.appendChild(tbody);
+        tableContainer.appendChild(table);
+        }
+        let headers = ['id', 'first_name', 'last_name', 'email', 'phone'];
+        createDynamicTable(headers, usersData);
     </script>
 </body>
+
 </html>
