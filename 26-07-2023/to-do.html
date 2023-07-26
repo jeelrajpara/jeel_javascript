@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        /* height: 100vh;
+        width: 100vw; */
+        background-color: bisque;
+    }
+    .container {
+        margin: 10px;
+    }
+    #input-box{
+        background-color: rgb(173, 129, 213);
+        width: 30%;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 10px;
+    }
+    input {
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+
+    #btn {
+        border: none;
+        padding: 10px;
+        background-color: black;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+
+    #list{
+        list-style-type: none;
+        margin-top: 10px;
+        font-size: 18px;
+        width: 30%;
+        overflow: hidden;
+       
+    }
+    li{
+        font-size: 20px;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+        <div id="input-box">
+            <input type="text" id="input-text" placeholder="Add Your Task">
+            <button type="submit" id="btn">Submit</button>
+            <ul id="list"></ul>
+        </div>
+    </div>
+    <script>
+        let inputText = document.getElementById('input-text');
+        let listItem = document.getElementById('list')
+
+        function addTask() {
+            let value = inputText.value.trim();
+            if(value.length>=3){
+                let isConfirm = confirm('Do you want to add task');
+                if(isConfirm){
+                    let li = document.createElement('li');
+                    li.innerText = value;
+                    listItem.appendChild(li);
+                    inputText.value='';
+                }
+                
+            }
+
+        }
+        let button = document.getElementById('btn');
+        button.addEventListener('click', () => {
+            addTask();
+        })
+    </script>
+</body>
+
+</html>
