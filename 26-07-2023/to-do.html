@@ -73,9 +73,9 @@
 
         function addTask() {
             let value = inputText.value.trim();
-            let isConfirm = confirm('Do you want to add task');
-            if(isConfirm){
-                if(value.length>=3){
+            if(value.length>=3){
+                let isConfirm = confirm('Do you want to add task');
+                if(isConfirm){
                     let li = document.createElement('li');
                     li.innerText = value;
                     listItem.appendChild(li);
