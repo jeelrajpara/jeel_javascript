@@ -114,9 +114,9 @@ function validateForm() {
         setSuccess(pass2);
     }
 
-    if (userNameValue !== '' && emailValue !== '' && passvalue !== '' && passvalue.length >= 8 && pass2Value !== '' && pass2Value.length >= 8) {
+    if (userNameValue !== '' && emailValue !== '' && passvalue !== '' && passvalue.length >= 8 && pass2Value !== '' && pass2Value.length >= 8 && passValid(passvalue) && passValid(pass2Value)) {
         isSuccessFull();
-        alert('Your form is successfully submitted')
+        // alert('Your form is successfully submitted')
     }
 }
 

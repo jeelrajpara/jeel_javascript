@@ -115,8 +115,8 @@
 // [“a”, ‘3df’, “gh”] => false
 
 // function arrayContainsNum(arr) {
-//   let result=arr.filter((value)=>typeof value ==='number');
-//   return result.length==1;
+//   let result=arr.some((value)=>typeof value ==='number');
+//   return result;
 // };
 // console.log(arrayContainsNum([1, 2, 3])); //true
 // console.log(arrayContainsNum(["1", "a", "h"])); //false

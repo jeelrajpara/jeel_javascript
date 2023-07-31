@@ -25,3 +25,6 @@ arr.forEach(button=>{
         console.log(e.target);
     })
 })
+
+// let inputBox = document.getElementById('input-box');
+// let buttons = document.querySelectorAll('.btn');
